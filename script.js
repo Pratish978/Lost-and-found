@@ -36,5 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
   
   setTimeout(() => {
     gallery.classList.add('show');
-  }, 1000); // 1 second delay
+  }, 3000); // 1 second delay
 });
+

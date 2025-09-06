@@ -5,6 +5,10 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: white;
 }
@@ -323,6 +327,21 @@ body {
   font-size: 1rem;
   color: #555;
 }
+
+/* Initial state: hidden and moved down */
+.gallery-grid {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Class to make it visible */
+.gallery-grid.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
 .feedback-section {

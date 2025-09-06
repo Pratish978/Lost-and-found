@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find It</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Find<span>It</span></div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Lost Items</a>
+        <a href="#">Found Items</a>
+        <a href="#">Login</a>
+        <a href="#">Sign up</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Welcome to <span>Find It</span></h1>
+      <p class="tagline">Your college’s official Lost & Found platform</p>
+      <p class="desc">
+        Misplaced something on campus? Or did you find an item that isn’t yours?
+        <br />“Find It” makes it easy for students to report lost items, check
+        found items, and reconnect belongings with their rightful owners.
+        <br /><br />Start searching today and help your friends and classmates
+        recover what’s missing!
+      </p>
+      <a href="#" class="hero-btn">Explore Items</a>
+    </section>
+
+    <section class="lost-section hidden">
+      <h2>Lost Something?</h2>
+      <img src="lost.jpg" alt="Lost Icon" />
+      <p>
+        If you have lost something, report it here and we will help you find it.
+      </p>
+      <button onclick="reportLost()">Report Lost Item</button>
+    </section>
+
+    <section class="find-section hidden">
+      <h2>Find Something?</h2>
+      <img src="find.jpg" alt="Find Icon" />
+      <p>
+        If you want to find something, check here and we will help you locate
+        it.
+      </p>
+      <button onclick="reportFind()">Report Found Item</button>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Recent Items</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="wallet.jpg" alt="Lost Item 1" />
+          <h3>Lost Wallet</h3>
+          <p>Lost near 1st floor.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="keys.webp" alt="Found Item 1" />
+          <h3>Found Keys</h3>
+          <p>Found in Ground.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="bag.webp" alt="Lost Item 2" />
+          <h3>Lost Bag</h3>
+          <p>Lost in Ground.</p>
+        </div>
+        <!-- Add more items similarly -->
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <h2>What Our Users Say</h2>
+      <div class="feedback-grid">
+        <div class="feedback-card">
+          <p>"I found my lost wallet within a day! Amazing service."</p>
+          <h4>- John Doe</h4>
+        </div>
+        <div class="feedback-card">
+          <p>
+            "Reporting lost items is super easy and quick. Highly recommended."
+          </p>
+          <h4>- Sarah Smith</h4>
+        </div>
+        <div class="feedback-card">
+          <p>"I found my keys thanks to this website. Very reliable!"</p>
+          <h4>- Michael Lee</h4>
+        </div>
+        <div class="feedback-card">
+          <p>"I found my keys thanks to this website. Very reliable!"</p>
+          <h4>- Michael Lee</h4>
+        </div>
+        <div class="feedback-card">
+          <p>
+            "Excellent platform for tracking lost items. Saved me a lot of
+            stress."
+          </p>
+          <h4>- Emily Clark</h4>
+        </div>
+        <div class="feedback-card">
+          <p>"The website is very user-friendly and fast. Loved it!"</p>
+          <h4>- David Kim</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 Lost & Found. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

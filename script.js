@@ -6,15 +6,12 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-function reportLost() {
-  alert("Redirecting to Lost Item Report Form...");
-}
 
 // Show animation when section is visible on scroll
 window.addEventListener("scroll", () => {
   const lostSection = document.querySelector(".lost-section");
   const position = lostSection.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 1.3;
+  const screenPosition = window.innerHeight / 1.1;
 
   if (position < screenPosition) {
     lostSection.classList.add("show");
@@ -26,9 +23,18 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   const findSection = document.querySelector(".find-section");
   const position = findSection.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 1.3;
+  const screenPosition = window.innerHeight / 1.1;
 
   if (position < screenPosition) {
     findSection.classList.add("show");
   }
+});
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const gallery = document.querySelector('.gallery-grid');
+  
+  setTimeout(() => {
+    gallery.classList.add('show');
+  }, 1000); // 1 second delay
 });

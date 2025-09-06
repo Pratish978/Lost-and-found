@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,10 +19,10 @@
 
       <div class="nav-links" id="nav-links">
         <a href="#">Home</a>
-        <a href="#">Lost Items</a>
-        <a href="#">Found Items</a>
-        <a href="#">Login</a>
-        <a href="#">Sign up</a>
+        <a href="#lost-section">Lost Items</a>
+        <a href="#find-section">Found Items</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign up</a>
       </div>
     </nav>
 
@@ -35,10 +36,10 @@
         <br /><br />Start searching today and help your friends and classmates
         recover what’s missing!
       </p>
-      <a href="#" class="hero-btn">Explore Items</a>
+      <a href="#lost-section" class="hero-btn">“Get Started”</a>
     </section>
 
-    <section class="lost-section hidden">
+    <section id="lost-section" class="lost-section hidden">
       <h2>Lost Something?</h2>
       <img src="lost.jpg" alt="Lost Icon" />
       <p>
@@ -47,7 +48,7 @@
       <button onclick="reportLost()">Report Lost Item</button>
     </section>
 
-    <section class="find-section hidden">
+    <section id="find-section" class="find-section hidden">
       <h2>Find Something?</h2>
       <img src="find.jpg" alt="Find Icon" />
       <p>
